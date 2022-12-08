@@ -31,7 +31,7 @@ nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
 
-nnoremap <C-/> :TerminalSplit bash<CR>
+nnoremap <C-b> :TerminalSplit bash<CR>
 
 nnoremap <C-p> :TagbarToggle<CR>
 
