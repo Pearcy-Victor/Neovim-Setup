@@ -11,7 +11,7 @@
 :filetype plugin indent on
 " :set backupdir=~/.cache/vim
 
-call plug#begin("`/.vim/plugged")
+call plug#begin("~/.vim/plugged")
 
 Plug 'http://github.com/tpope/vim-surround'
 Plug 'https://github.com/preservim/nerdtree'
