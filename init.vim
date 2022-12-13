@@ -1,4 +1,11 @@
-:set ma
+:set nocompatible
+:set showmatch
+:set ignorecase
+:set hlsearch
+:set incsearch
+:set clipboard=unnamedplus
+:set ttyfast
+:set spell
 :set number
 :set relativenumber
 :set autoindent
@@ -9,6 +16,7 @@
 :syntax on
 :set cursorline
 :filetype plugin indent on
+:set noswapfile
 " :set backupdir=~/.cache/vim
 
 call plug#begin("~/.vim/plugged")
@@ -55,7 +63,10 @@ nnoremap <A-w> :w<CR>
 
 :set completeopt-=preview
 
-:colorscheme dracula
+if (has("termguicolors"))
+    set termguicolors
+endif
+colorscheme dracula
 
 let g:coc_disable_startup_warning = 1
 let g:NERDTreeDirArrowExpandable="+"
