@@ -91,6 +91,3 @@ let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
 inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
-
-autocmd vimenter * if !argc() | TerminalSplit bash | endif
-autocmd vimenter * if !argc() | NERDTree | endif
